@@ -1,5 +1,5 @@
 #include "myMath.h"
-//Pow&Exp
+//Pow&Exp home work 1
 
 double Exp(int x) {
     double e=2.71828;
