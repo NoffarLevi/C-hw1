@@ -3,25 +3,61 @@
 double Exp(int x) {
     double e=2.71828;
     double ans=e;
- while(x>1)
+if(x>0)
+{
+            
+     while(x>1)
     {
         ans=ans*e;
         x--;
     }
     
-return ans;
+    return ans;
 
+ }
+
+ else if(x==0){
+     return ans=1;
+ }
+
+
+ else {//x<0
+
+      while(x<-1)
+    {
+        ans=ans*e;
+        x++;
+    }
+    
+    return 1/ans;
+
+ }
 }
+
 double Pow(double x , int y) {
     if(y==0)
     return 1;
-double tmp=x;
-while(y>1){
-tmp=tmp*x;
-y--;
-}
-return tmp;
+  
+    else if(y>0){
+        
+    
+    double tmpPo=x;
+    while(y>1){
+    tmpPo=tmpPo*x;
+    y--;
+    }
+    return tmpPo;
 
-    return x-y;
+    }
 
-}
+    else {//y<0
+       double tmpNe=x;
+    while(y<-1){
+    tmpNe=tmpNe*x;
+    y++;
+    }
+    return 1/tmpNe;
+
+
+}   
+    }
